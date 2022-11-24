@@ -4,6 +4,8 @@ import classes from "./Product.module.css";
 
 const productsArr = [
   {
+    id: "1",
+    quantity: "1",
     title: "Colors",
 
     price: 100,
@@ -12,6 +14,8 @@ const productsArr = [
   },
 
   {
+    id: "1",
+    quantity: "1",
     title: "Black and white Colors",
 
     price: 50,
@@ -20,6 +24,8 @@ const productsArr = [
   },
 
   {
+    id: "1",
+    quantity: "1",
     title: "Yellow and Black Colors",
 
     price: 70,
@@ -28,6 +34,8 @@ const productsArr = [
   },
 
   {
+    id: "1",
+    quantity: "1",
     title: "Blue Color",
 
     price: 100,
@@ -44,6 +52,7 @@ const Product = () => {
       title={ele.title}
       price={ele.price}
       url={ele.imageUrl}
+      quantity={ele.quantity}
     />
   ));
   return (
