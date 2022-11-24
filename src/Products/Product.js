@@ -48,14 +48,7 @@ const Product = () => {
   ));
   return (
     <div className={classes.newsbox}>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          height: "10vh"
-        }}
-      >
+      <div className={classes.product}>
         <h1> Music </h1>
       </div>
       <ul>{productItem}</ul>

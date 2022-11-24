@@ -1,6 +1,18 @@
 .boxfield,
 .newsbox {
-    display: inline-block;
-    vertical-align: text-top;
-    margin: 0 auto;
+  display: inline-block;
+  vertical-align: text-top;
+  margin: 0 auto;
+}
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.product h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 500;
 }
