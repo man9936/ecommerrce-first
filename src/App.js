@@ -6,6 +6,8 @@ import Product from "./Products/Product";
 import "./styles.css";
 import Cart from "./Cart/Cart";
 import CartProvider from "./store/Cart-Provider";
+import Home from "./Pages/Home";
+import HomeHeader from "./Pages/HomeHeader";
 
 import About from "./Pages/About";
 
@@ -23,14 +25,21 @@ export default function App() {
   return (
     <CartProvider>
       <Header onShowCart={showCartHandler} />
-      <Header2 />
-      {showCart && <Cart onClose={hideCartHandler} />}
+
       <Route path="/store">
+        <Header2 />
+        {showCart && <Cart onClose={hideCartHandler} />}
+
         <Product />
       </Route>
-
       <Route path="/about">
+        <Header2 />
         <About />
+      </Route>
+
+      <Route path="/home">
+        <HomeHeader />
+        <Home />
       </Route>
     </CartProvider>
   );

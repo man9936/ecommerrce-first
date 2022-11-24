@@ -7,13 +7,17 @@ export default function Header(props) {
   return (
     <nav>
       <ul className={classes.testHeader}>
-        <li> Home </li>
-        <li>
-          <NavLink to="store">Store</NavLink>
-        </li>
-        <li>
-          <NavLink to="/about">About</NavLink>
-        </li>
+        <NavLink activeClassName={classes.active} to="/home">
+          {" "}
+          Home{" "}
+        </NavLink>
+        <NavLink activeClassName={classes.active} to="/store">
+          Store
+        </NavLink>
+        <NavLink activeClassName={classes.active} to="/about">
+          About
+        </NavLink>
+
         <div className={classes.shoppingCart}>
           <HeaderCartButton onClick={props.onShowCart} />
         </div>
