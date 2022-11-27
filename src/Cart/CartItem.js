@@ -23,7 +23,7 @@ export default function CartItem(props) {
     cntxt.removeItem(id);
   };
 
-  const incrementHandler = () => {
+  const decrementHandler = () => {
     dispatch({ type: "DEC" });
   };
 
@@ -36,7 +36,7 @@ export default function CartItem(props) {
       <div className={classes.summary}>
         <span className={classes.price}>Price: {props.price}</span>
       </div>
-      <button onClick={incrementHandler}>-</button>
+      <button onClick={decrementHandler}>-</button>
       <span>{state}</span>
       <button onClick={() => dispatch({ type: "INC" })}>+</button>
       <div className={classes.actions}>

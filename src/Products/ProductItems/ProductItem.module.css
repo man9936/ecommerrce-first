@@ -1,7 +1,7 @@
 .products {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .product {
@@ -9,7 +9,7 @@
   flex-wrap: wrap;
   width: 100%;
   padding: 0 10px;
-  margin: 10px 0;
+  /* margin: 10px 0; */
   overflow: hidden;
 }
 
@@ -52,3 +52,5 @@
   text-align: centre;
   font-size: 14px;
 }
+
+

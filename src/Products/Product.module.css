@@ -1,15 +1,17 @@
-.boxfield,
+/* .boxfield,
 .newsbox {
   display: inline-block;
   vertical-align: text-top;
   margin: 0 auto;
-}
+} */
 .product {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  /* justify-content: center;
   align-items: center;
-  height: 10vh;
+  height: 10vh; */
+  width: 30%;
+  margin-right: auto;
 }
 
 .product h1 {

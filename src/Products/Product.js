@@ -47,8 +47,7 @@ const productsArr = [
 const Product = () => {
   const productItem = productsArr.map((ele) => (
     <ProductItem
-      key={ele.key}
-      id={ele.id}
+      key={ele.id}
       title={ele.title}
       price={ele.price}
       url={ele.imageUrl}
@@ -56,12 +55,11 @@ const Product = () => {
     />
   ));
   return (
-    <div className={classes.newsbox}>
-      <div className={classes.product}>
-        <h1> Music </h1>
-      </div>
+    <section className={classes.product}>
+      {/* <h1> Music </h1> */}
+
       <ul>{productItem}</ul>
-    </div>
+    </section>
   );
 };
 

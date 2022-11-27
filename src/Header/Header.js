@@ -17,6 +17,9 @@ export default function Header(props) {
         <NavLink activeClassName={classes.active} to="/about">
           About
         </NavLink>
+        <NavLink activeClassName={classes.active} to="/contact">
+          Contact Us
+        </NavLink>
 
         <div className={classes.shoppingCart}>
           <HeaderCartButton onClick={props.onShowCart} />

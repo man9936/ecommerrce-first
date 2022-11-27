@@ -8,7 +8,7 @@ import Cart from "./Cart/Cart";
 import CartProvider from "./store/Cart-Provider";
 import Home from "./Pages/Home";
 import HomeHeader from "./Pages/HomeHeader";
-
+import ContactUs from "./Pages/ContactUs";
 import About from "./Pages/About";
 
 export default function App() {
@@ -41,6 +41,10 @@ export default function App() {
         <HomeHeader />
         <Home />
       </Route>
+      <Route path='/contact' >
+            <Header2/>
+             <ContactUs/>
+            </Route> 
     </CartProvider>
   );
 }
